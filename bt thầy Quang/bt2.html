@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+        let number1 = +prompt('Nhập số nguyên thứ 1');
+        let number2 = +prompt('Nhập số nguyên thứ 2');
+        let number3 = +prompt('Nhập số nguyên thứ 3');
+        
+        let max=number1
+        if (max<number2) {
+            max=number2
+        }
+        if (max<number3) {
+            max=number3
+        }
+         
+        let min=number1
+        if (min>number2) {
+            min=number2
+        }
+        if (min>number3) {
+            min=number3
+        }
+
+        console.log("Số lớn nhất là : " + max);
+        console.log("Số bé nhất là : " + min);
+    </script>
+</body>
+</html>

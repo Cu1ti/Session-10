@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 4</title>
+</head>
+<body>
+    <script>
+        let number1=+prompt('Nhập vào số nguyên thứ 1');
+        let number2=+prompt('Nhập vào số nguyên thứ 2');
+        let pheptinh=prompt('Nhập vào 1 phép tính (+,-,*,/)');
+        switch (pheptinh) {
+            case '+':
+                console.log('Kết quả là : '+ (number1+number2));
+                break;
+
+            case '-':
+                console.log('Kết quả là : '+(number1-number2));
+                break;
+
+            case '*':
+                console.log('Kết quả là : '+(number1*number2));
+                break;
+
+            case '/':
+                console.log('Kết quả là : '+(number1/number2));
+                break;
+
+            default:
+                console.log('Nhập vào 2 số nguyên và 1 phép tính tương ứng');
+                break;
+        }
+    </script>
+</body>
+</html>

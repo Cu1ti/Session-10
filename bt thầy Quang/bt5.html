@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 5</title>
+</head>
+
+<body>
+    <script>
+        let htmlScore = +prompt('Hãy nhập điểm HTML của bạn');
+        let cssScore = +prompt('Hãy nhập điểm CSS của bạn');
+        let jsScore = +prompt('Hãy nhập điểm Javascript của bạn');
+        let mediumScore = (htmlScore + cssScore + jsScore) / 3;
+        if (mediumScore < 5) {
+            console.log('Bạn là học sinh yếu');
+        } else if (mediumScore < 6) {
+            console.log('Bạn là học sinh kém');
+        } else if (mediumScore < 7) {
+            console.log('Bạn là học sinh trung bình');
+        } else if (mediumScore < 8) {
+            console.log('Bạn là học sinh khá');
+        } else if (mediumScore < 9) {
+            console.log('Bạn là học sinh giỏi');
+        } else {
+            console.log('Bạn là học sinh xuất sắc');
+        }
+    </script>
+</body>
+
+</html>

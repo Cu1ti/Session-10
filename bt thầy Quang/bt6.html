@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 6</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt('Nhập vào số đo cạnh 1'));
+        let b = Number(prompt('Nhập vào số đo cạnh 2'));
+        let c = Number(prompt('Nhập vào số đo cạnh 3'));
+        // if (a + b > c || a + c > b || b + c > a) {
+        // //     document.write('Đó là tam giác thường')
+        // } 
+        if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a) {
+            document.write('Tam giác vuông');
+        } else if (a == b && b == c && c == a) {
+            document.write('Tam giác đều');
+        } else if (a * a + b * b == c * c && a == b || a * a + c * c == b * b && a == c || b * b + c * c == a * a && b == c) {
+            document.write('Tam giác vuông cân')
+        } else if (a == b || b == c || a == c) {
+            document.write('Tam giác cân');
+        } else {
+            document.write('Đây là tam giác thường')
+        }
+    </script>
+</body>
+
+</html>
